@@ -74,7 +74,7 @@ class PrivateIngredientsApiTests(TestCase):
             name=payload['name']
         ).exists()
         self.assertTrue(exists)
-    
+
     def test_create_ingredient_invalid(self):
         """Test creating invalid ingredient fails"""
         payload = {'name': ''}
